@@ -14,6 +14,10 @@ export default function Projects() {
   const { breakpoint } = useBreakpoint(BREAKPOINTS);
   const [modal, setModal] = useState<ProjectModal>({ active: false, index: 0 });
 
+  if (!projects?.length) {
+    return null;
+  }
+
   return (
     <>
       {projects.map((project, index) => (

@@ -7,6 +7,10 @@ import WorkContent from './WorkContent';
 import { workTiles } from './workTiles';
 
 export default function Works() {
+  if (!workTiles?.length) {
+    return null;
+  }
+
   return (
     <TileWrapper numOfPages={workTiles.length}>
       <TileBackground>
