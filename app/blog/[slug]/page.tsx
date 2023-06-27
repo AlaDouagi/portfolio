@@ -19,10 +19,39 @@ export async function generateMetadata({
     return {};
   }
 
+  const domain = process.env.SITE_DOMAIN ?? '';
+
+  const { title, date: publishedTime, summary: description, ogImage: image } = post;
+  const ogImage = domain.concat(image ?? `/api/og?title=${title}`);
+
   return {
-    title: post.title,
-    description: post.summary,
+    title: title,
+    description,
+    openGraph: {
+      title,
+      description,
+      type: 'article',
+      publishedTime,
+      url: domain.concat(`/blog/${slug}`),
+      images: [
+        {
+          url: ogImage,
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description,
+      images: [ogImage],
+    },
   };
+}
+
+export async function generateStaticParams() {
+  return allBlogs.map((post) => ({
+    slug: post.slug,
+  }));
 }
 
 export default function BlogPost({ params }: { params: { slug: string } }) {
