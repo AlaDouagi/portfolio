@@ -52,13 +52,15 @@ export default function Intro() {
             className="introText inline-block after:content-['_']"
             style={{ opacity: opacityForBlock(progress, 1) }}
           >
-            I use my passion and skills to build digital products and experiences.
+            I leverage my passion and expertise to create innovative digital products and immersive
+            experiences.
           </span>
           <span
             className="introText inline-block"
             style={{ opacity: opacityForBlock(progress, 2) }}
           >
-            I&apos;m passionate about cutting-edge, pixel perfect UI and intuitively implemented UX.
+            My enthusiasm lies in exploring the latest advancements in JavaScript technologies and
+            seamlessly integrating UI design systems.
           </span>
         </div>
       </div>
