@@ -2,7 +2,7 @@ const siteMetadata = {
   title: 'Alaeddine Douagi',
   author: 'Alaeddine Douagi',
   headerTitle: 'aladouagi',
-  description: 'Software Developer at Metro Markets GmbH',
+  description: 'Senior Web Developer at Metro Markets GmbH',
   language: 'en-us',
   theme: 'dark', // system, dark or light
   siteUrl: 'https://aladouagi.com',

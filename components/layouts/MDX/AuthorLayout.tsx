@@ -18,6 +18,13 @@ export default function AuthorLayout({ children, content }: Props) {
           <h2 className="text-sm font-normal md:text-base">
             {occupation} <span className="font-semibold">{company}</span>
           </h2>
+          <a
+            className="inline-flex items-center bg-gradient-to-r from-gradient-1-start to-gradient-1-end bg-clip-text font-extrabold text-transparent"
+            href="/alaeddine-douagi-CV.pdf"
+            download="alaeddine-douagi-CV.pdf"
+          >
+            Download CV
+          </a>
         </div>
         <div>
           <Image
