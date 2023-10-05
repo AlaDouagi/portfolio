@@ -21,7 +21,7 @@ export default function AuthorLayout({ children, content }: Props) {
           <a
             className="inline-flex items-center bg-gradient-to-r from-gradient-1-start to-gradient-1-end bg-clip-text font-extrabold text-transparent"
             href="/alaeddine-douagi-CV.pdf"
-            download="alaeddine-douagi-CV.pdf"
+            target="_blank"
           >
             Download CV
           </a>
