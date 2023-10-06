@@ -19,7 +19,7 @@ export default function AuthorLayout({ children, content }: Props) {
             {occupation} <span className="font-semibold">{company}</span>
           </h2>
           <a
-            className="inline-flex items-center bg-gradient-to-r from-gradient-1-start to-gradient-1-end bg-clip-text font-extrabold text-transparent"
+            className="inline-flex animate-gradient items-center bg-gradient-to-r from-orange-400 via-gradient-1-start to-gradient-1-end bg-300% bg-clip-text font-extrabold text-transparent"
             href="/alaeddine-douagi-CV.pdf"
             target="_blank"
           >
